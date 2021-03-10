@@ -18,7 +18,7 @@ h1 a {
 h1 {
     letter-spacing: 5px;
     align-self: center;
-    padding: 0 10px;
+    margin: 0 10px;
 }
 
 h1::first-letter {
@@ -38,6 +38,7 @@ header {
 
 .menu-icon {
     width: 40px;
+    margin: 0 10px;
     text-align: center;
     cursor: pointer;
 }
@@ -123,7 +124,6 @@ nav {
     max-height: 100vh;
 }
 
-
 @media only screen and (min-width: 1000px) {
     .container {
         display: flex;
@@ -176,8 +176,6 @@ nav {
         margin-left: 0.5rem;
     }
 
-    
-
     ul.dropdown-menu {
         padding: 0;
         position: absolute; 
@@ -211,9 +209,3 @@ nav {
     
 }
 
-/* TO DO BEFORE HANDING IN */
-/* *********************** */
-/* finish off the wide screen version of the menu
-Copy and paste header to every page ( not including the section title)
-Validate your markup
-upload and submit a URL of the finished build */
