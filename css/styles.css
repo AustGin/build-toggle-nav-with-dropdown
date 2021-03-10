@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(255, 105, 180), rgb(89, 203, 232));
+    background: linear-gradient(rgb(255, 136, 196), rgb(89, 203, 232));
     font-family: 'Nunito', sans-serif;
     color: #00263e;
 }
@@ -17,6 +17,8 @@ h1 a {
 
 h1 {
     letter-spacing: 5px;
+    align-self: center;
+    padding: 0 10px;
 }
 
 h1::first-letter {
@@ -38,6 +40,10 @@ header {
     width: 40px;
     text-align: center;
     cursor: pointer;
+}
+
+p {
+    font-weight: bold;
 }
 
 header .flex-container {
@@ -63,7 +69,7 @@ header a svg {
 .main-menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #f89d70;
+    color: #8c6eaf;
     font-weight: 700;
     padding: 0 10px;
     display: block;
@@ -118,10 +124,96 @@ nav {
 }
 
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1000px) {
     .container {
-        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
         width: 79.125rem;
         margin: 0 auto;
     }
+
+    .menu-icon {
+        display: none;
+    }
+
+    header nav {
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    header .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul.main-menu, header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    ul.main-menu li {
+        flex: 1 0 auto;
+        white-space: nowrap;
+        text-align: center;
+        position: relative;
+        line-height: 55px;
+        border-bottom: 0;
+    }
+
+    .main-menu li:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .main-menu li:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .main-menu svg:last-of-type {
+        /* this only works in a flex container */
+        margin-left: 0.5rem;
+    }
+
+    
+
+    ul.dropdown-menu {
+        padding: 0;
+        position: absolute; 
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    ul.dropdown-menu li {
+        margin: 0;
+    }
+
+    ul.dropdown-menu a {
+        display: block;
+    }
+
+    ul.main-menu li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    ul.main-menu li:focus-within > ul,
+    ul.main-menu li > ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    
 }
+
+/* TO DO BEFORE HANDING IN */
+/* *********************** */
+/* finish off the wide screen version of the menu
+Copy and paste header to every page ( not including the section title)
+Validate your markup
+upload and submit a URL of the finished build */
