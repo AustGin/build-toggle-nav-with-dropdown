@@ -61,11 +61,14 @@ header a svg {
     margin: 0 25px;
     border-bottom: 1px solid #e3eaf3;
     white-space: nowrap;
-    margin-bottom: 0.5rem;
 }
 
 .main-menu li:last-of-type {
     border-bottom: none;
+}
+
+.main-menu li:nth-child(3) li {
+    margin-bottom: 0.5rem;
 }
 
 .main-menu a {
@@ -104,10 +107,6 @@ header a svg {
 .dropdown-menu {
     max-height: 0;
     overflow: hidden;
-}
-
-.dropdown-menu li {
-    margin-bottom: 0;
 }
 
 .main-menu li:hover >.dropdown-menu {
@@ -166,6 +165,9 @@ nav {
         position: relative;
         line-height: 55px;
         border-bottom: 0;
+    }
+
+    .main-menu li:nth-child(3) li {
         margin-bottom: 0;
     }
 
