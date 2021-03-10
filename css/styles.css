@@ -106,6 +106,10 @@ header a svg {
     overflow: hidden;
 }
 
+.dropdown-menu li {
+    margin-bottom: 0;
+}
+
 .main-menu li:hover >.dropdown-menu {
     max-height: 100vh;
 }
